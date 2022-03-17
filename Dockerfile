@@ -5,5 +5,6 @@ ENV RUNNING_IN_CONTAINER=1
 WORKDIR /code
 COPY requirements.txt /code/requirements.txt
 RUN pip install -r requirements.txt
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 COPY . .
-RUN python manage.py migrate
