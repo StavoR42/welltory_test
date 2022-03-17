@@ -1,0 +1,6 @@
+Django==3.2.12
+requests==2.27.1
+celery==5.2.3
+redis==4.1.4
+fastapi==0.75.0
+uvicorn[standard]
